@@ -1,50 +1,56 @@
-# Codex — implementation workflow for Stripe challenge
+# Codex — implementation workflow for Stripe: Rethinking Financial Futures
 
-Use this only after the official Stripe brief has been converted into concrete requirements.
+Use this after the team has selected a concrete user, financial problem and core flow.
+
+The official challenge does **not** require a Stripe API integration. Codex should implement the chosen product and preserve a working demo, not force a payments architecture.
 
 ## First task for Codex
 
 ```text
-You are working on a 48-hour hackathon project for the Stripe challenge.
+You are working on a 48-hour hackathon project for the Stripe track “Rethinking Financial Futures”.
+
+Official challenge: make navigating the financial future more accessible, relevant and empowering for people in Romania.
 
 First inspect the repository and summarize:
 - current stack;
 - how to run it locally;
 - existing user flow;
-- which parts are mocked;
-- which parts are real;
-- current Stripe integration, if any;
-- obvious blockers or unsafe handling of credentials.
+- which parts are mocked versus real;
+- current data/AI/API integrations;
+- obvious blockers, unsafe credential handling, or architecture risks.
+
+Then read docs/HACKATHON_BRIEF.md and docs/PRODUCT_SPEC.md and compare the implementation against the chosen product definition.
 
 Do not rewrite the project or introduce a new framework unless necessary.
-
-Then compare the current implementation against the official requirements in docs/PRODUCT_SPEC.md and produce the smallest implementation plan that closes the gaps.
 
 Work in small, testable steps. For every change:
 1. state the exact goal;
 2. list files changed;
 3. implement the minimum code;
 4. give exact run/test commands;
-5. describe one happy-path test and one failure-path test.
+5. describe one happy-path test and one failure/limitation test;
+6. state what is real and what is mocked.
 
 Rules:
-- Stripe secret keys must stay server-side and out of Git.
-- Use Stripe test/sandbox mode unless requirements explicitly say otherwise.
-- Do not fake a Stripe success response and present it as real.
-- Do not install major infrastructure without a concrete requirement.
-- Prefer simple code the team can explain to judges.
 - Preserve a working demo after every step.
+- Never print or commit secrets.
+- Keep Featherless or any other API keys server-side / in secret storage.
+- Do not add Stripe APIs unless the chosen product actually needs them.
+- Do not add AI merely because Featherless credits are available.
+- Do not install major infrastructure without a concrete requirement.
+- Prefer code the team can understand and explain to judges.
+- Optimize for the jury criteria: UX, technical quality, challenge fit, and demo clarity.
 ```
 
-## Later tasks
+## Good Codex tasks
 
-Once a real Stripe flow exists, use Codex for:
+- implement one screen or user-flow step;
+- wire one calculation or API call;
+- fix one integration error;
+- add loading/error/limitation states;
+- add tests for the core scenario;
+- review security/secrets handling;
+- make setup reproducible;
+- clean up code before submission.
 
-- fixing integration errors;
-- webhook handling if required;
-- validation and failure states;
-- automated tests for the core scenario;
-- setup instructions for teammates/judges;
-- code cleanup shortly before submission.
-
-Avoid giving Codex a giant request such as “build the whole hackathon project.” Small tasks are easier to verify and recover from.
+Avoid requests like “build the entire hackathon project”. Small tasks are easier to test, explain and recover from.
