@@ -1,37 +1,76 @@
-# MVP — propunere, de confirmat după briefing
+# Stripe challenge — brief intake and product spec
 
-## Problema
-Un singur model poate da un răspuns plauzibil dar greșit. Vrem să facem criticile și reviziile vizibile și comparabile.
+## Status
 
-## Flux utilizator
-1. Utilizatorul introduce o idee, afirmație sau soluție.
-2. Proposer răspunde cu o propunere și ipoteze explicite.
-3. Challenger formulează 2–4 obiecții verificabile / contraexemple.
-4. Proposer poate revizui o singură dată.
-5. Judge oferă verdict, incertitudini și recomandări de verificare.
-6. UI afișează separat fiecare etapă.
+The exact Stripe challenge brief is **pending**. This file is intentionally a requirements template until the official materials are received.
 
-## Criterii de acceptare
-- Un exemplu complet funcționează fără refresh.
-- Stări loading, eroare și input gol.
-- Verdictul nu este prezentat ca adevăr absolut.
-- Modul simulat este marcat clar; modul AI real se activează numai după conectarea securizată a unui API.
-- Cel puțin 3 scenarii de test cu comportament așteptat, inclusiv o afirmație intenționat falsă.
-- Datele dintr-o sesiune nu sunt expuse altor utilizatori.
+## Official challenge statement
 
-## Ce NU facem în MVP
-- Execuție arbitrară de cod trimis de utilizator.
-- Sisteme distribuite de agenți, cozi, containere multiple.
-- Scoring științific inventat sau pretins ca măsură obiectivă.
-- Login, plăți sau dashboard administrativ.
+_To be filled from the official Stripe materials. Do not paraphrase away important constraints._
 
-## Extensii doar dacă există timp
-- Mod comparativ: single-agent vs arena.
-- Afișare cost/timp real pe etapă.
-- Test suite și rubrică de evaluare cu exemple verificabile.
-- Export rezultat.
+## Mandatory requirements
 
-## Decizii deschise
-- Stack și provider AI după validarea cu Lovable și regulamentul.
-- Repository unic de cod după exportul Lovable.
-- Limitele de cost și rate limiting.
+- TBD
+
+## Constraints / forbidden approaches
+
+- TBD
+
+## Judging criteria
+
+- TBD
+
+## Inputs / datasets / APIs
+
+- TBD
+
+## Required output / deliverable
+
+- TBD
+
+## Target user
+
+- TBD
+
+## Core problem
+
+- TBD
+
+## Proposed MVP
+
+To be decided **only after** reading the official brief.
+
+The MVP should contain:
+
+1. one clear user;
+2. one real problem;
+3. one end-to-end scenario;
+4. one meaningful Stripe integration if required by the brief;
+5. one error/edge-case path;
+6. a demo the jury can verify quickly.
+
+## Acceptance criteria
+
+Will be derived directly from the official requirements and jury criteria.
+
+## Non-goals by default
+
+Unless the brief explicitly needs them, avoid:
+
+- complicated authentication;
+- multiple databases;
+- microservices;
+- custom payment infrastructure that duplicates Stripe;
+- production credentials;
+- unnecessary AI agents;
+- architecture that teammates cannot explain during judging.
+
+## Open questions for mentors
+
+- What exactly must be real versus mocked?
+- Which Stripe products are expected or allowed?
+- Is Stripe test mode sufficient for the demo?
+- Are external APIs or AI APIs allowed?
+- Are there restrictions on hosting/deployment?
+- What evidence must be submitted?
+- What failure scenarios should the jury be able to test?
