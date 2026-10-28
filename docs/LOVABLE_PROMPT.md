@@ -1,17 +1,48 @@
-# Prompt inițial pentru Lovable
+# Lovable — use only after the Stripe brief is understood
 
-Create a polished, responsive hackathon MVP called **AI Agent Arena**. The product is a transparent interface where AI roles challenge an idea rather than simply agree with each other.
+Do **not** paste a product prompt into Lovable before we understand the official Stripe challenge.
 
-IMPORTANT: start with a **fully functional, explicitly labeled SIMULATED DEMO**, not fake API calls presented as real. No authentication, database, external integrations or API keys yet.
+## When the brief arrives
 
-Build a single-page application with:
-- A clear hero explaining “Challenge ideas. Expose assumptions. Improve reasoning.”
-- A text area with an example prompt and a Start Arena button.
-- Four readable sequential cards: (1) Proposer: initial answer and assumptions, (2) Challenger: concrete objections and counterexamples, (3) Proposer: revision, (4) Judge: balanced verdict, remaining uncertainties and next verification steps.
-- Loading/progression UI, empty input validation, Reset, a copyable summary, and a compact “How it works” panel.
-- A prominent badge reading “Simulated demo — no live AI calls” while simulated.
-- Two or three selectable example scenarios; use deterministic canned responses for examples and label any generic placeholder output for custom prompts.
-- Clean, accessible, mobile-first design with readable contrast and no distracting animations.
-- A visible future integration boundary (document in code) for replacing simulated data with real server-side AI orchestration.
+Use Lovable for the visual shell and user flow, not for inventing requirements.
 
-Acceptance criteria: works in preview, handles empty input, responsive on mobile, and does not imply the fake responses were generated live. Avoid complex dependencies. After building, tell me how to test each state and which files would need modification to connect a real LLM securely.
+Before prompting Lovable, define:
+
+- target user;
+- core problem;
+- exact happy-path flow;
+- one important failure/edge case;
+- what Stripe interaction is real;
+- what data is mocked;
+- what the jury must be able to verify.
+
+## Prompt template
+
+Replace every [PLACEHOLDER] before use.
+
+```text
+Create a polished, responsive hackathon MVP for the Stripe challenge.
+
+Problem: [EXACT PROBLEM]
+Target user: [USER]
+Core user flow: [STEP-BY-STEP FLOW]
+Stripe capability used: [STRIPE PRODUCT/API]
+Required real behavior: [WHAT MUST ACTUALLY WORK]
+Allowed mocked data: [WHAT CAN BE SIMULATED]
+Important edge case: [FAILURE/EDGE CASE]
+
+Build only the minimum UI needed for this flow. Keep the architecture simple and easy to modify during a hackathon. Do not add login, payments, a database, AI features, dashboards or integrations unless they are explicitly required above.
+
+Never put Stripe secret keys in browser code. Clearly separate UI mock data from real Stripe test-mode interactions. Add useful loading, success and error states. Make the app mobile-friendly and easy to demo in under 90 seconds.
+
+After building, explain:
+1. which files were created;
+2. how to test the happy path;
+3. how to test the failure path;
+4. what still uses mock data;
+5. what is needed for the real Stripe integration.
+```
+
+## Rule
+
+If we cannot fill the placeholders from the official brief, we are not ready to generate the app yet.
