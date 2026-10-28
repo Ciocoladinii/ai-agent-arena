@@ -1,76 +1,87 @@
-# Stripe challenge — brief intake and product spec
+# Product Spec — Stripe: Rethinking Financial Futures
 
-## Status
+## Official challenge
 
-The exact Stripe challenge brief is **pending**. This file is intentionally a requirements template until the official materials are received.
+**How can we make navigating the financial future a more accessible, relevant and empowering experience for people in Romania?**
 
-## Official challenge statement
+The team chooses the **audience**, **financial need**, and **product experience**.
 
-_To be filled from the official Stripe materials. Do not paraphrase away important constraints._
+## What the solution must demonstrate
 
-## Mandatory requirements
+1. Who the product serves and which problem it solves.
+2. How the core experience works end-to-end.
+3. Why the solution is relevant in Romania.
+4. Which assumptions, data sources, regulatory considerations and limitations apply.
 
-- TBD
-
-## Constraints / forbidden approaches
-
-- TBD
+See `docs/HACKATHON_BRIEF.md` for the canonical event brief.
 
 ## Judging criteria
 
-- TBD
+- 20% Challenge fit and differentiation
+- 25% User experience
+- 25% Technical implementation
+- 20% Delivery and pitch
+- 10% Business mentoring
 
-## Inputs / datasets / APIs
+## Current status
 
-- TBD
+No final product concept is selected yet.
 
-## Required output / deliverable
+## Concept selection rule
 
-- TBD
+Before coding, every candidate idea must be expressible as:
 
-## Target user
+> For **[specific Romanian user]** who struggles with **[specific financial problem]**, we build **[specific experience]** that helps them **[measurable/useful outcome]**.
 
-- TBD
+Score each concept from 1–5 on:
 
-## Core problem
+- pain / relevance in Romania;
+- clarity of target user;
+- demoability in 2–3 minutes;
+- UX potential;
+- technical feasibility within the hackathon;
+- differentiation;
+- ability to explain assumptions/data/limitations honestly.
 
-- TBD
+Prefer the idea with the strongest overall score, not the one with the most features.
 
-## Proposed MVP
-
-To be decided **only after** reading the official brief.
+## MVP requirements once a concept is selected
 
 The MVP should contain:
 
-1. one clear user;
-2. one real problem;
-3. one end-to-end scenario;
-4. one meaningful Stripe integration if required by the brief;
-5. one error/edge-case path;
-6. a demo the jury can verify quickly.
+1. one specific user persona;
+2. one important financial job-to-be-done;
+3. one end-to-end happy path;
+4. one meaningful uncertainty, limitation or edge case;
+5. enough real logic to prove the product's value;
+6. a clear Romanian relevance story;
+7. transparent assumptions and data sources.
 
-## Acceptance criteria
+## Technology
 
-Will be derived directly from the official requirements and jury criteria.
+Technology follows the problem.
 
-## Non-goals by default
+- Lovable is available for rapid UI/product development.
+- Featherless AI is available through an OpenAI-compatible API if AI materially improves the experience.
+- A Stripe API integration is **not required by the official brief** based on the provided slides.
+- Do not add AI, payments, auth, databases or external integrations just to make the project look complex.
 
-Unless the brief explicitly needs them, avoid:
+## Data / regulation / assumptions
 
-- complicated authentication;
-- multiple databases;
-- microservices;
-- custom payment infrastructure that duplicates Stripe;
-- production credentials;
-- unnecessary AI agents;
-- architecture that teammates cannot explain during judging.
+Before the demo, explicitly document:
 
-## Open questions for mentors
+- which data is real, public, synthetic or mocked;
+- any assumptions used in calculations/recommendations;
+- what the product does **not** guarantee;
+- relevant financial/regulatory considerations for the chosen use case;
+- what would need to change for a production deployment.
 
-- What exactly must be real versus mocked?
-- Which Stripe products are expected or allowed?
-- Is Stripe test mode sufficient for the demo?
-- Are external APIs or AI APIs allowed?
-- Are there restrictions on hosting/deployment?
-- What evidence must be submitted?
-- What failure scenarios should the jury be able to test?
+## Deliverables
+
+By Thursday 29 October, 11:00:
+
+- GitHub repository;
+- 3-minute video pitch;
+- slide deck.
+
+The product should be ready to demonstrate by 09:00.
