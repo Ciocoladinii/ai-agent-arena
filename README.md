@@ -27,11 +27,29 @@ The product must clearly demonstrate:
 - **20%** Delivery and pitch
 - **10%** Business mentoring
 
+## Current product direction
+
+The team is exploring an application with a conversational layer (text, voice or both) alongside structured financial outputs. The final AI usage still needs confirmation from organisers/mentors; QA DNA has an explicit no-LLM final-system rule, while no equivalent restriction appears in the official Stripe materials we have.
+
+The UX focus is broader than making the app easy to operate: financial outputs must be understandable to users with different levels of technical and financial literacy.
+
+## Start here
+
+1. [Canonical hackathon brief](docs/HACKATHON_BRIEF.md)
+2. [Immediate next steps](docs/START_HERE.md)
+3. [Product specification / concept selection](docs/PRODUCT_SPEC.md)
+4. [UX principles for financial comprehension](docs/UX_PRINCIPLES.md)
+5. [Rapid user testing checklist](docs/USER_TESTING.md)
+6. [Available tools and Featherless setup](docs/TOOLS.md)
+7. [Lovable workflow](docs/LOVABLE_PROMPT.md)
+8. [Codex workflow](docs/CODEX_PROMPT.md)
+9. [Team playbook](docs/TEAM_PLAYBOOK.md)
+
 ## Critical clarification
 
 The official brief does **not** require Stripe Payments, Checkout, Connect, Billing or another Stripe API integration. Stripe is the challenge sponsor; technology should follow the chosen problem.
 
-Likewise, AI is optional. We have Featherless credits/API access, but an LLM should only be used if it materially improves the user experience.
+AI is a possible implementation tool, not the value proposition by itself. Featherless credits/API access are available, but an LLM should only be used if it materially improves the user experience or core functionality.
 
 ## Event deadlines
 
@@ -48,25 +66,9 @@ Thursday 29 October:
 - Submission: **3-minute video pitch + GitHub repository + slide deck**
 - 17:00 — live finals
 
-## Start here
-
-1. [Canonical hackathon brief](docs/HACKATHON_BRIEF.md)
-2. [Immediate next steps](docs/START_HERE.md)
-3. [Product specification / concept selection](docs/PRODUCT_SPEC.md)
-4. [Available tools and Featherless setup](docs/TOOLS.md)
-5. [Lovable workflow](docs/LOVABLE_PROMPT.md)
-6. [Codex workflow](docs/CODEX_PROMPT.md)
-7. [Team playbook](docs/TEAM_PLAYBOOK.md)
-
-## Current status
-
-**No product concept is locked yet.**
-
-The immediate task is to choose one narrow Romanian audience, one meaningful financial problem and one strong end-to-end experience. Do not start by choosing technology.
-
 ## Tooling available
 
-- **Lovable** — connected, hackathon credits available.
+- **Lovable** — connected by the team, hackathon credits available.
 - **Featherless AI** — team API key available; OpenAI-compatible endpoint shown by organisers.
 - **ChatGPT / Codex** — planning, implementation, debugging, testing and documentation.
 - **GitHub** — source of truth for code and project documentation.
