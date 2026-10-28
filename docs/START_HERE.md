@@ -1,57 +1,94 @@
-# Start here — Stripe challenge
+# Start Here — Stripe: Rethinking Financial Futures
 
-## Before the official Stripe brief arrives
+## The challenge is now clear
 
-1. Keep GitHub, ChatGPT, Codex and Lovable ready.
-2. Do **not** build Stripe-specific functionality from guesses.
-3. Do **not** create another repository yet.
-4. Do **not** add Stripe keys anywhere in frontend code or GitHub.
-5. Keep the repo minimal and ready for rapid iteration.
+We are building for the Stripe track at VibeHack @ NEXXT Summit 2026.
 
-## As soon as the official materials arrive
+The official question is:
 
-Capture and paste into this repository:
+> **How can we make navigating the financial future a more accessible, relevant and empowering experience for people in Romania?**
 
-- exact challenge statement;
-- mandatory requirements;
-- forbidden approaches / constraints;
-- judging criteria and weights;
-- required Stripe products/APIs, if any;
-- datasets or sample inputs;
-- required output / demo format;
-- deployment requirements;
-- submission deadline and deliverables;
-- mentor clarifications.
+The team chooses the target audience, financial need and product experience.
 
-Then answer, in order:
+Read `docs/HACKATHON_BRIEF.md` before making product or architecture decisions.
 
-1. What exact user/problem are we solving?
-2. What must the jury be able to test?
-3. What is the smallest complete scenario?
-4. Which Stripe capability is essential to that scenario?
-5. What can be simulated and what must be real?
-6. What does success look like in a 60–90 second demo?
+## What to do next
 
-## First implementation milestone
+### 1. Choose one concept before serious coding
 
-Only after the brief is understood:
+For each idea, write one sentence:
 
-- define one core user flow;
-- create a minimal UI prototype;
-- connect one real Stripe test-mode flow if required;
-- add one failure/edge-case flow;
-- document exact run instructions;
-- make the demo reproducible by another teammate.
+> For [specific Romanian user] who struggles with [specific financial problem], we build [specific experience] that helps them [useful outcome].
 
-## Avoid until there is a real need
+Score ideas on challenge fit, UX potential, technical feasibility, differentiation and demoability.
 
-- Kubernetes;
-- multiple microservices;
-- Redis / queues;
-- custom auth;
-- complex databases;
-- home-server deployment;
-- multiple AI agents;
-- production payment credentials.
+### 2. Ask mentors the questions that can eliminate bad ideas early
 
-The goal is not maximum complexity. The goal is a reliable, testable hackathon demo that matches the official Stripe brief.
+Use Stripe technical mentoring to clarify:
+
+- what types of solutions they consider especially relevant to the challenge;
+- whether they expect or value use of Stripe technology, even though the official brief does not require it;
+- what regulatory/financial-advice boundaries they expect teams to acknowledge;
+- what makes a strong Romanian-market story;
+- what they want to see as real logic versus mocked/demo data.
+
+### 3. First checkpoint target — Wednesday 14:00–15:30
+
+Have ready:
+
+- target user;
+- concrete problem;
+- 30-second value proposition;
+- one end-to-end flow sketch;
+- main assumptions/data source plan;
+- architecture sketch;
+- clear division of work.
+
+### 4. Second checkpoint target — Wednesday 18:30–20:00
+
+Have a first working MVP:
+
+- core journey works end-to-end;
+- UI is understandable without explanation;
+- core calculation/AI/logic actually runs;
+- at least one failure or uncertainty is handled;
+- team can explain what is real, mocked and assumed.
+
+### 5. Submission target
+
+By Thursday:
+
+- 09:00 — ready to demo and submit;
+- 11:00 — final submission deadline;
+- deliver GitHub repository, 3-minute video pitch and slide deck.
+
+## Tools ready
+
+- **Lovable** — connected and credits available; use after the concept/flow is defined.
+- **Featherless AI** — API key available; use only if an LLM meaningfully improves the selected experience. Keep the key secret.
+- **ChatGPT/Codex** — use for planning, coding, debugging, testing and documentation.
+
+See `docs/TOOLS.md`.
+
+## Do not do yet
+
+Until the concept is selected, do not:
+
+- build a generic finance dashboard;
+- add Stripe Payments merely because Stripe sponsors the challenge;
+- add an LLM merely because Featherless credits exist;
+- build auth or a database by default;
+- create multiple services;
+- spend time on Docker/infrastructure unless the chosen solution requires it.
+
+## Scoring reminder
+
+The Stripe jury weights:
+
+- 25% UX;
+- 25% technical implementation;
+- 20% challenge fit and differentiation;
+- 20% delivery and pitch;
+- 10% business mentoring.
+
+That means the best immediate investment is **a clear user/problem plus a strong, working end-to-end experience**.
