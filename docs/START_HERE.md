@@ -1,16 +1,57 @@
-# Prima oră — checklist
+# Start here — Stripe challenge
 
-1. Citește README și challenge-ul oficial când apare. Nu construi presupuneri ca și cum ar fi cerințe.
-2. Deschide GitHub, ChatGPT, Codex și Lovable. Pentru început nu porni un server acasă.
-3. În Lovable creează un proiect nou folosind promptul din `docs/LOVABLE_PROMPT.md`.
-4. Verifică vizual fluxul: idee → propunere → critică → verdict; testează și pe mobil.
-5. Marchează clar datele simulate; nu introduce încă chei API în frontend.
-6. După primul prototip, conectează GitHub din Lovable și identifică repository-ul creat de Lovable. Nu încerca să sincronizezi direct acest repository existent.
-7. Trimite aici linkul proiectului Lovable / noului repository. Alegem un repo de cod principal și mutăm documentația.
-8. Fă un demo de 60 de secunde și notează 3 probleme concrete. Repară întâi blocajele, nu adăuga funcții.
+## Before the official Stripe brief arrives
 
-**Definition of done pentru prima etapă:** un vizitator poate introduce un prompt, apăsa Start, vedea cele 3 roluri și verdictul; modul demo este etichetat, iar pagina funcționează pe mobil.
+1. Keep GitHub, ChatGPT, Codex and Lovable ready.
+2. Do **not** build Stripe-specific functionality from guesses.
+3. Do **not** create another repository yet.
+4. Do **not** add Stripe keys anywhere in frontend code or GitHub.
+5. Keep the repo minimal and ready for rapid iteration.
 
-**Nu instala acum:** Kubernetes, baze de date, Docker, Redis sau modele locale fără o nevoie concretă.
+## As soon as the official materials arrive
 
-**Întrebări pentru briefing:** input/output cerut, API-uri permise, criterii de evaluare, restricții de deploy, demo live sau video, ce trebuie livrat pe GitHub.
+Capture and paste into this repository:
+
+- exact challenge statement;
+- mandatory requirements;
+- forbidden approaches / constraints;
+- judging criteria and weights;
+- required Stripe products/APIs, if any;
+- datasets or sample inputs;
+- required output / demo format;
+- deployment requirements;
+- submission deadline and deliverables;
+- mentor clarifications.
+
+Then answer, in order:
+
+1. What exact user/problem are we solving?
+2. What must the jury be able to test?
+3. What is the smallest complete scenario?
+4. Which Stripe capability is essential to that scenario?
+5. What can be simulated and what must be real?
+6. What does success look like in a 60–90 second demo?
+
+## First implementation milestone
+
+Only after the brief is understood:
+
+- define one core user flow;
+- create a minimal UI prototype;
+- connect one real Stripe test-mode flow if required;
+- add one failure/edge-case flow;
+- document exact run instructions;
+- make the demo reproducible by another teammate.
+
+## Avoid until there is a real need
+
+- Kubernetes;
+- multiple microservices;
+- Redis / queues;
+- custom auth;
+- complex databases;
+- home-server deployment;
+- multiple AI agents;
+- production payment credentials.
+
+The goal is not maximum complexity. The goal is a reliable, testable hackathon demo that matches the official Stripe brief.
