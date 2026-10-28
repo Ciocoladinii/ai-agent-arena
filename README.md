@@ -1,44 +1,84 @@
-# Stripe Challenge — VibeHack / NEXT AI Hackathon 2026
+# Stripe — Rethinking Financial Futures | VibeHack @ NEXXT Summit 2026
 
-This repository is now the working space for our **Stripe challenge** at the hackathon.
+This repository is the working space for our **Stripe challenge**.
 
-> Previous direction: QA DNA / AI Agent Arena. That direction is abandoned and should not guide implementation.
+## Official challenge
 
-## Current status
+> **How can we make navigating the financial future a more accessible, relevant and empowering experience for people in Romania?**
 
-We have been assigned to **Stripe**, but we do not yet have the full official Stripe brief in this repository. Until the brief arrives, we do **not** build product-specific features or invent requirements.
+We choose the:
 
-Our immediate goal is to be ready to move fast once the official materials arrive.
+- **audience**;
+- **financial need**;
+- **product experience**.
 
-## Working principles
+The product must clearly demonstrate:
 
-- Build the smallest end-to-end demo that satisfies the official brief.
-- Heavy use of ChatGPT, Codex and Lovable for vibe coding is expected.
-- Prefer simple, understandable architecture over impressive but fragile complexity.
-- Keep one main repository and small feature branches when multiple people start coding.
-- Test every generated change before merging it.
-- Never commit secrets, Stripe keys, `.env` files or credentials.
-- Use Stripe test/sandbox tooling unless the official challenge explicitly requires something else.
-- Do not add infrastructure (Docker, databases, queues, extra services) without a concrete need.
+1. who it serves and what problem it solves;
+2. how the core experience works end-to-end;
+3. why it matters in Romania;
+4. assumptions, data sources, regulatory considerations and limitations.
+
+## Judging
+
+- **25%** User experience
+- **25%** Technical implementation
+- **20%** Challenge fit and differentiation
+- **20%** Delivery and pitch
+- **10%** Business mentoring
+
+## Critical clarification
+
+The official brief does **not** require Stripe Payments, Checkout, Connect, Billing or another Stripe API integration. Stripe is the challenge sponsor; technology should follow the chosen problem.
+
+Likewise, AI is optional. We have Featherless credits/API access, but an LLM should only be used if it materially improves the user experience.
+
+## Event deadlines
+
+Wednesday 28 October:
+
+- 14:00–15:30 — approach and foundations checkpoint
+- 18:30–20:00 — first working MVP checkpoint
+- 20:00 — pitch preparation workshop
+
+Thursday 29 October:
+
+- 09:00 — ready to demonstrate and submit
+- 11:00 — submission deadline
+- Submission: **3-minute video pitch + GitHub repository + slide deck**
+- 17:00 — live finals
 
 ## Start here
 
-- [Immediate checklist](docs/START_HERE.md)
-- [Stripe brief intake / requirements](docs/PRODUCT_SPEC.md)
-- [Lovable instructions](docs/LOVABLE_PROMPT.md)
-- [Codex instructions](docs/CODEX_PROMPT.md)
-- [Team playbook](docs/TEAM_PLAYBOOK.md)
+1. [Canonical hackathon brief](docs/HACKATHON_BRIEF.md)
+2. [Immediate next steps](docs/START_HERE.md)
+3. [Product specification / concept selection](docs/PRODUCT_SPEC.md)
+4. [Available tools and Featherless setup](docs/TOOLS.md)
+5. [Lovable workflow](docs/LOVABLE_PROMPT.md)
+6. [Codex workflow](docs/CODEX_PROMPT.md)
+7. [Team playbook](docs/TEAM_PLAYBOOK.md)
 
-## Repository rename
+## Current status
 
-Recommended repository name: **`vibehack-stripe-2026`**.
+**No product concept is locked yet.**
 
-The connected GitHub tool can edit repository contents but cannot rename the repository itself. Rename it in GitHub via:
+The immediate task is to choose one narrow Romanian audience, one meaningful financial problem and one strong end-to-end experience. Do not start by choosing technology.
 
-`Repository → Settings → General → Repository name → vibehack-stripe-2026 → Rename`
+## Tooling available
 
-GitHub normally redirects the old repository URL after a rename, so existing local clones can still be repaired easily if needed.
+- **Lovable** — connected, hackathon credits available.
+- **Featherless AI** — team API key available; OpenAI-compatible endpoint shown by organisers.
+- **ChatGPT / Codex** — planning, implementation, debugging, testing and documentation.
+- **GitHub** — source of truth for code and project documentation.
 
-## Important
+## Security
 
-Do not start a Lovable build from the old AI Agent Arena prompt. The old product concept is no longer relevant.
+Never commit API keys, `.env` files or credentials. The Featherless key must remain in environment/secret storage only.
+
+## Repository name
+
+Recommended final name: **`vibehack-stripe-2026`**.
+
+If this repository is still named `ai-agent-arena`, rename it in GitHub:
+
+`Settings → General → Repository name → vibehack-stripe-2026 → Rename`
