@@ -1,48 +1,64 @@
-# Lovable — use only after the Stripe brief is understood
+# Lovable — workflow for Stripe: Rethinking Financial Futures
 
-Do **not** paste a product prompt into Lovable before we understand the official Stripe challenge.
+Use Lovable **after** the team selects a specific user, financial problem and end-to-end experience.
 
-## When the brief arrives
+The official challenge does not require a Stripe API integration. Lovable should implement the chosen product experience, not invent the problem or force a payments flow.
 
-Use Lovable for the visual shell and user flow, not for inventing requirements.
+## Before prompting Lovable
 
-Before prompting Lovable, define:
+Fill these fields first:
 
-- target user;
-- core problem;
-- exact happy-path flow;
-- one important failure/edge case;
-- what Stripe interaction is real;
-- what data is mocked;
-- what the jury must be able to verify.
+- Target user in Romania: [USER]
+- Financial problem: [PROBLEM]
+- Desired outcome: [OUTCOME]
+- Core user flow: [FLOW]
+- Why this matters in Romania: [ROMANIAN RELEVANCE]
+- Core logic/data source: [LOGIC / DATA]
+- What is real: [REAL BEHAVIOUR]
+- What is mocked/synthetic: [MOCKED DATA]
+- Important limitation/edge case: [LIMITATION]
+- Is AI actually needed? [YES/NO + WHY]
+
+If these are unclear, do not start the full app yet.
 
 ## Prompt template
 
-Replace every [PLACEHOLDER] before use.
-
 ```text
-Create a polished, responsive hackathon MVP for the Stripe challenge.
+Create a polished, responsive hackathon MVP for the Stripe challenge “Rethinking Financial Futures”.
 
-Problem: [EXACT PROBLEM]
+Official challenge: make navigating the financial future more accessible, relevant and empowering for people in Romania.
+
 Target user: [USER]
-Core user flow: [STEP-BY-STEP FLOW]
-Stripe capability used: [STRIPE PRODUCT/API]
-Required real behavior: [WHAT MUST ACTUALLY WORK]
-Allowed mocked data: [WHAT CAN BE SIMULATED]
-Important edge case: [FAILURE/EDGE CASE]
+Specific financial problem: [PROBLEM]
+Desired user outcome: [OUTCOME]
+Why it matters in Romania: [ROMANIAN RELEVANCE]
+Core end-to-end flow: [FLOW]
+Core logic/data: [LOGIC / DATA]
+Real behaviour that must work: [REAL BEHAVIOUR]
+Mocked or synthetic data: [MOCKED DATA]
+Important limitation/edge case: [LIMITATION]
+AI usage: [NONE or EXACT AI FEATURE]
 
-Build only the minimum UI needed for this flow. Keep the architecture simple and easy to modify during a hackathon. Do not add login, payments, a database, AI features, dashboards or integrations unless they are explicitly required above.
+Optimize for the jury criteria:
+- clear, accessible and intuitive UX;
+- a working technical prototype that proves value;
+- clear Romanian relevance and differentiation;
+- a demo that can be explained in under 3 minutes.
 
-Never put Stripe secret keys in browser code. Clearly separate UI mock data from real Stripe test-mode interactions. Add useful loading, success and error states. Make the app mobile-friendly and easy to demo in under 90 seconds.
+Build only the minimum UI needed for the selected flow. Do not add authentication, payments, Stripe APIs, databases, AI features or dashboards unless they are explicitly part of the product definition above.
+
+Clearly distinguish real calculations/API calls from mocked data. Add loading, success, error, empty and limitation states where relevant. Make the app mobile-friendly and visually coherent.
+
+Never expose secret API keys in frontend code.
 
 After building, explain:
-1. which files were created;
-2. how to test the happy path;
-3. how to test the failure path;
-4. what still uses mock data;
-5. what is needed for the real Stripe integration.
+1. which files were created or changed;
+2. how to run and test the happy path;
+3. how to test the failure/limitation path;
+4. which parts are real and which are mocked;
+5. any remaining technical risks before demo.
 ```
 
 ## Rule
 
-If we cannot fill the placeholders from the official brief, we are not ready to generate the app yet.
+The first Lovable version should prove the **user journey**, not maximize the number of screens.
