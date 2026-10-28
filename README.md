@@ -1,42 +1,44 @@
-# AI Agent Arena — NEXT AI Hackathon
+# Stripe Challenge — VibeHack / NEXT AI Hackathon 2026
 
-**Status:** pregătire înainte de briefing. Acesta este un plan de lucru, **nu** cerința oficială a organizatorilor.
+This repository is now the working space for our **Stripe challenge** at the hackathon.
 
-## Ideea de MVP (provizorie)
+> Previous direction: QA DNA / AI Agent Arena. That direction is abandoned and should not guide implementation.
 
-O aplicație care arată, transparent, cum trei roluri AI verifică o idee sau o soluție:
+## Current status
 
-1. **Proposer** — propune un răspuns / o soluție.
-2. **Challenger** — caută ipoteze slabe, contraexemple și teste.
-3. **Judge** — compară argumentele și produce un verdict explicat.
+We have been assigned to **Stripe**, but we do not yet have the full official Stripe brief in this repository. Until the brief arrives, we do **not** build product-specific features or invent requirements.
 
-În interfață utilizatorul vede inputul, pașii, criticile, verdictul și (când sunt disponibile) durata și costul. Scopul este **calitatea verificabilă**, nu doar o conversație spectaculoasă între boți.
+Our immediate goal is to be ready to move fast once the official materials arrive.
 
-**Regulă:** nu pretindem că rezultatele din modul demonstrativ sunt apeluri reale la AI. Etichetăm clar „Demo / simulated” până când există integrare reală.
+## Working principles
 
-## Priorități
+- Build the smallest end-to-end demo that satisfies the official brief.
+- Heavy use of ChatGPT, Codex and Lovable for vibe coding is expected.
+- Prefer simple, understandable architecture over impressive but fragile complexity.
+- Keep one main repository and small feature branches when multiple people start coding.
+- Test every generated change before merging it.
+- Never commit secrets, Stripe keys, `.env` files or credentials.
+- Use Stripe test/sandbox tooling unless the official challenge explicitly requires something else.
+- Do not add infrastructure (Docker, databases, queues, extra services) without a concrete need.
 
-- Un singur flux cap-coadă funcțional, înainte de funcționalități suplimentare.
-- Vibe coding cu Lovable / Codex / ChatGPT, cu teste manuale după fiecare pas.
-- API keys numai în secrete de server, niciodată în browser sau GitHub.
-- Un set mic de cazuri de test pentru a compara răspunsul simplu cu răspunsul verificat adversarial.
-- Ajustăm proiectul imediat ce primim challenge-ul oficial și criteriile de jurizare.
+## Start here
 
-## Începe aici
+- [Immediate checklist](docs/START_HERE.md)
+- [Stripe brief intake / requirements](docs/PRODUCT_SPEC.md)
+- [Lovable instructions](docs/LOVABLE_PROMPT.md)
+- [Codex instructions](docs/CODEX_PROMPT.md)
+- [Team playbook](docs/TEAM_PLAYBOOK.md)
 
-- [Pașii pentru prima oră](docs/START_HERE.md)
-- [Specificația MVP și criteriile de acceptare](docs/PRODUCT_SPEC.md)
-- [Prompt pentru primul prototip în Lovable](docs/LOVABLE_PROMPT.md)
-- [Prompt pentru Codex când avem codul aplicației](docs/CODEX_PROMPT.md)
-- [Lucrul în echipă și planul de 48 de ore](docs/TEAM_PLAYBOOK.md)
+## Repository rename
 
-## GitHub și Lovable
+Recommended repository name: **`vibehack-stripe-2026`**.
 
-Acest repository a fost creat înaintea proiectului Lovable. Conform documentației Lovable, Git sync **creează un repository nou** și nu poate conecta direct unul existent. Prin urmare, aici ținem inițial planul și task-urile. Dacă Lovable creează alt repository pentru aplicație, alegem **un singur repository de cod principal** și mutăm documentația acolo, în loc să dezvoltăm două aplicații separate.
+The connected GitHub tool can edit repository contents but cannot rename the repository itself. Rename it in GitHub via:
 
-## Atenție la secrete
+`Repository → Settings → General → Repository name → vibehack-stripe-2026 → Rename`
 
-Repository-ul este **public**. Nu încărcați tokenuri, API keys, fișiere `.env`, date personale sau capturi care expun credențiale.
+GitHub normally redirects the old repository URL after a rename, so existing local clones can still be repaired easily if needed.
 
----
-Actualizați această pagină după briefing.
+## Important
+
+Do not start a Lovable build from the old AI Agent Arena prompt. The old product concept is no longer relevant.
