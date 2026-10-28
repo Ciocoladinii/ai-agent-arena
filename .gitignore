@@ -1,0 +1,27 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# JS / TS
+node_modules/
+dist/
+build/
+.next/
+coverage/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
